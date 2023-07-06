@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp"
+    android:elevation="32dp"
+    app:cardCornerRadius="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_jenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_awal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Awal tahun perusahaan berdiri"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:id="@+id/tv_pendapatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pendapatan"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:id="@+id/tv_asal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asal perusahaan"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+
+        <Button
+            android:id="@+id/btn_ubah"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="Ubah"
+            android:drawableLeft="@drawable/ic_ubah"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/Rallyblue" />
+
+        <Button
+            android:id="@+id/btn_hapus"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="Hapus"
+            android:drawableLeft="@drawable/ic_hapus"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/Rallyblue"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
